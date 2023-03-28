@@ -124,6 +124,9 @@ h2{
 #header .nav-list ul.active {
 	left: 0%;
 }
+ul.active{
+	background-color: #6C63FF;
+}
 #header .nav-list ul a {
 	font-size: 2.5rem;
 	font-weight: 500;
