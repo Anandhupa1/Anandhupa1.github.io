@@ -3,10 +3,6 @@ const mobile_menu = document.querySelector('.header .nav-menu .nav-list ul');
 const menu_item = document.querySelectorAll('.header .nav-menu .nav-list ul li a');
 const header = document.querySelector('.header.container');
 
-hamburger.addEventListener('click', () => {
-	hamburger.classList.toggle('active');
-	mobile_menu.classList.toggle('active');
-});
 
 document.addEventListener('scroll', () => {
 	var scroll_position = window.scrollY;
@@ -17,14 +13,21 @@ document.addEventListener('scroll', () => {
 	}
 });
 
-menu_item.forEach((item) => {
-	item.addEventListener('click', () => {
-		hamburger.classList.toggle('active');
-		mobile_menu.classList.toggle('active');
-	});
-});
+
+//navbar
+ // slide-up script
 
 
+  $(".navbar .menu li a").click(function () {
+    // applying again smooth scroll on menu items click
+    $("html").css("scrollBehavior", "smooth");
+  });
+
+  // toggle menu/navbar script
+  $(".menu-btn").click(function () {
+    $(".navbar .menu").toggleClass("active");
+    $(".menu-btn i").toggleClass("active");
+  });
 
 // let resumeBtn = document.querySelector("#resume");
 // resumeBtn.addEventListener("click",(e)=>{
