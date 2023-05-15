@@ -4,14 +4,14 @@ const menu_item = document.querySelectorAll('.header .nav-menu .nav-list ul li a
 const header = document.querySelector('.header.container');
 
 
-document.addEventListener('scroll', () => {
-	var scroll_position = window.scrollY;
-	if (scroll_position > 250) {
-		header.style.backgroundColor = '#E6E6E6';
-	} else {
-		header.style.backgroundColor = 'transparent';
-	}
-});
+// document.addEventListener('scroll', () => {
+// 	var scroll_position = window.scrollY;
+// 	if (scroll_position > 250) {
+// 		header.style.backgroundColor = '#E6E6E6';
+// 	} else {
+// 		header.style.backgroundColor = 'transparent';
+// 	}
+// });
 
 
 //navbar
