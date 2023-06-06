@@ -4,7 +4,6 @@
 	--dark: #39374E;
 	
   }
-
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
 * {
 	padding: 0;
@@ -55,7 +54,6 @@ h2{
 .section-title span {
 	color: #6C63FF;
 }
-
 .cta {
 	display: inline-block;
 	padding: 10px 30px;
@@ -81,9 +79,7 @@ h2{
 .brand h1 span {
 	color: #6C63FF;
 }
-
 /* navbar start  */
-/* navbar styling */
 .navbar {
 	background-color: var(--grey);
 	position: fixed;
@@ -171,8 +167,6 @@ h2{
   
 /* navbar end  */
 
-
-
 /* Home Section */
 #home {
 	background-image: url(./images/my\ coding\ background.png);
@@ -214,27 +208,24 @@ h2{
 
 /* End Home Section */
 
- /*                                project section */
+ /*project section starts */
 
 .projects{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
+	color: #fff;
+	background: #E6E6E6;
+	display: grid;
+	grid-template-columns: repeat(auto);
 }
 
 .teams {
 	color: #fff;
 	background: #fff;
+	
   }
-  
-  .projects {
-	color: #fff;
-	background: #E6E6E6;
-	display: grid;
-	grid-template-columns: repeat(auto);
-  }
-  
   .projects .title::before,
   .teams .title::before {
 	background: #fff;
@@ -257,7 +248,6 @@ h2{
 	padding: 20px;
 	box-sizing: border-box;
   }
-  
   .projects .serv-content .project-card {
 	height: 100%;
 	background: #fff;
@@ -267,9 +257,6 @@ h2{
 	cursor: pointer;
 	transition: all 0.3s ease;
   }
-  
-
-  
   .projects .serv-content .project-card .box {
 	height: 100%;
 	display: flex;
@@ -278,12 +265,10 @@ h2{
 	text-align: left;
 	transition: all 0.3s ease;
   }
-  
   .projectImage {
 	height: 40%;
 	object-fit: contain;
   }
-  
   .projects .serv-content .project-card:hover .box {
 	transform: scale(1.05);
   }
@@ -304,7 +289,6 @@ h2{
 	font-weight: 500;
 	margin: 20px 0px;
   }
-  
   .project-tech-stack {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -313,7 +297,6 @@ h2{
 	margin: auto;
 	margin-top: 30px;
   }
-  
   .project-tech-stack img {
 	object-fit: contain;
 	width: 100%;
@@ -321,7 +304,10 @@ h2{
   .sourceCodeBtn .viewBtn {
     margin: 0 10px;
   }
-  
+  #resume-button-2{
+	background-color: transparent;
+	border: none;
+  }
   .viewBtn {
 	display: flex;
 	font-size: larger;
@@ -354,19 +340,8 @@ h2{
 	margin-top: 30px;
 	font-size: large;
   }
-  
-  
-  
-  
 
-
-
-
-
-
-
-
-/*                               End Projects section */
+/* End Projects section */
 
 /* About Section */
 #about .about {
@@ -398,16 +373,8 @@ h2{
 	padding: 10px 20px;
 	font-size: 2rem;
 }
-
-
 /* End About Section */
-
-
-
-
 /* tools and skills section start*/
-
-
 .teams {
 	background-color:#000;
 	margin-top: 50px;
@@ -432,27 +399,28 @@ h2{
 	width: 63px;
 	height: 63px;
   }
-  
-
-
-
 /* tools and skills section end  */
 
 /* gitstats start */
 .calendar{
+	color: var(--main);
 	
+	padding: 5%;
 }
+
 #gitStatus{
 	
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
+
 	flex-wrap: wrap;
 	width: 90%;
 	height: auto;
 	margin: auto;
 }
 #gitStatus div{
-	width: 48%;
+	width: 40%;
+	margin: 3%;
 	
 }
 
@@ -463,9 +431,6 @@ h2{
   /* align-items: center; */
   justify-content: space-between;
 }
-
-
-  
   .contact .contact-content .column {
 	width: calc(50% - 30px);
   }
@@ -516,7 +481,10 @@ h2{
 	text-decoration: none;
 	color: #333;
 	cursor: pointer;
-	/* background-color: blue; */
+	text-decoration: none;
+	font-size: x-large;
+	cursor: pointer;
+	
   }
   
   .sub-title1:hover {
@@ -595,16 +563,6 @@ h2{
 	background-color: #fff;
 	padding: 100px;
   }
-  .sub-title1 {
-	text-decoration: none;
-	
-	font-size: x-large;
-	cursor: pointer;
-	
-	
-  }
-
-
 
 /*End contact Section */
 
@@ -706,13 +664,11 @@ h2{
 	/* End Services Section */
 
 	/* Project */
-	#projects .project-item {
-		flex-direction: row;
-	}
 	#projects .project-item:nth-child(even) {
 		flex-direction: row-reverse;
 	}
 	#projects .project-item {
+		flex-direction: row;
 		height: 400px;
 		margin: 0;
 		width: 100%;
@@ -815,9 +771,6 @@ h2{
 }
 /* End  Media Query For Desktop */
 
-
-
-
 /* responsive media queries start  */
 
 @media (max-width: 947px) {
@@ -855,7 +808,6 @@ h2{
 
  
 }
-
 
 @media (max-width: 500px) {
 
