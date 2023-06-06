@@ -404,15 +404,19 @@ h2{
 /* gitstats start */
 .calendar{
 	color: var(--main);
-	
 	padding: 5%;
+  color:var(--main);
+	padding: 10px;
+	width: auto;
+	padding: 0px;
+
 }
+
 
 #gitStatus{
 	
 	display: flex;
 	justify-content: center;
-
 	flex-wrap: wrap;
 	width: 90%;
 	height: auto;
@@ -421,9 +425,7 @@ h2{
 #gitStatus div{
 	width: 40%;
 	margin: 3%;
-	
 }
-
 /* contact Section */
 .contact  .contact-content {
 	display: flex;
