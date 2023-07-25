@@ -30,6 +30,11 @@ img {
 	width: 100%;
 	object-fit: cover;
 }
+.projectImage {
+	height: 40%;
+	border-radius: 5px;
+	
+  }
 p {
 	color: black;
 	font-size: 20px;
@@ -220,7 +225,22 @@ h2{
 	display: grid;
 	grid-template-columns: repeat(auto);
 }
+.project-description{
 
+	display: flex;
+	text-align:start;
+	margin: 0px;
+	font-size: 16px;
+	
+}
+.project-title{
+	color :#000;
+	margin: 0px;
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+	
+}
 .teams {
 	color: #fff;
 	background: #fff;
@@ -237,9 +257,7 @@ h2{
 	margin-top: 10px;
 	content: "what i have built";
   }
-  .projectImage{
-  border-radius: 10px;
-  }
+
   .projects .serv-content {
 	display: grid;
 	width: 100%;
@@ -253,10 +271,70 @@ h2{
 	background: #fff;
 	text-align: center;
 	border-radius: 6px;
-	padding: 50px 25px;
+	padding: 35px 25px;
 	cursor: pointer;
 	transition: all 0.3s ease;
   }
+  /* project badge1 to show project status */
+  /* Style for the badge1 */
+.badge1 {
+	display: inline-block;
+	padding: 6px 12px;
+	
+	/* color: #000; */
+	border-radius: 5px;
+	font-size: 16px;
+	margin-right: 3px;
+	/* font-weight: bold; */
+	
+	/* text-transform: uppercase; */
+	/* letter-spacing: 1px; */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Hover effect for badge1 */
+ 
+  
+  /* project badge1 to show project status */
+
+  /* project techstack badges */
+ .project-tech-stack{
+	padding-top: 15px;
+	padding-bottom: 10px;
+	
+ }
+  /* CSS for badges */
+.badge {
+	display: inline-flex;
+	align-items: center;
+	padding: 0px 8px;
+	/* background-color: var(--grey); */
+	border: 1px solid #b3b3b3;
+	color: #000;
+	border-radius: 5px;
+	font-size: 10px;
+	font-weight: bold;
+	margin-right: 5px;
+	margin-top: 2.5px;
+	margin-bottom: 2.5px;
+	margin-left: 0px;
+	
+  }
+  .badge:hover{
+	background-color: var(--grey);
+  }
+  .badge img {
+	height: 20px;
+	width: 20px;
+	margin: 5px;
+	/* margin-right: 8px; */
+  }
+  
+  .badge-name {
+	margin-right: 4px;
+  }
+  
+  /* project techstack badges */
   .projects .serv-content .project-card .box {
 	height: 100%;
 	display: flex;
@@ -265,10 +343,7 @@ h2{
 	text-align: left;
 	transition: all 0.3s ease;
   }
-  .projectImage {
-	height: 40%;
-	object-fit: contain;
-  }
+
   .projects .serv-content .project-card:hover .box {
 	transform: scale(1.05);
   }
@@ -289,56 +364,54 @@ h2{
 	font-weight: 500;
 	margin: 20px 0px;
   }
-  .project-tech-stack {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 10%;
-	width: 90%;
-	margin: auto;
-	margin-top: 30px;
-  }
-  .project-tech-stack img {
+
+  /* .project-tech-stack>img {
 	object-fit: contain;
 	width: 100%;
-  }
-  .sourceCodeBtn .viewBtn {
-    margin: 0 10px;
-  }
+  } */
+
   #resume-button-2{
 	background-color: transparent;
 	border: none;
   }
   .viewBtn {
 	display: flex;
-	font-size: larger;
-	flex-direction: column;
+	font-size: 16px;
+	flex-direction: row;
 	align-items: center;
 	padding: 6px 14px;
-	font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
-	border-radius: 6px;
-	border: none;
+	font-family:  "Roboto", sans-serif;
+	border-radius: 5px;
+	border: 1px;
 	cursor: pointer;
 	background-color: var(--main);
 	color: #fff;
-	
+	border: 1px solid #6C63FF;
 	background-origin: border-box;
 	box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25),
 	  inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
 
 	touch-action: manipulation;
+	margin-right: 8px;
   }
   
   .viewBtn:hover {
 	background-color: #fff;
-	border: 2px solid #6C63FF;
 	color: var(--main);
   }
-  
+  .viewBtn:hover #viewIcon{
+  color: #6C63FF;
+  }
+  #viewIcon{
+  font-size: 16px;
+  color: #fff;
+  margin-right: 7px;
+  }
 .sourceCodeBtn {
 	display: flex;
-	justify-content: space-around;
-	margin-top: 30px;
-	font-size: large;
+	justify-content: flex-start;
+	margin-top: 10px;
+    
   }
 
 /* End Projects section */
@@ -682,9 +755,7 @@ h2{
 	#projects .all-projects .project-img {
 		height: 100%;
 	}
-	#projectName{
-    color: #000;
-	}
+	
 	
 	/* End Project */
 

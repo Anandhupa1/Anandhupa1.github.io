@@ -29,17 +29,4 @@ const header = document.querySelector('.header.container');
     $(".menu-btn i").toggleClass("active");
   });
 
-// let resumeBtn = document.querySelector("#resume");
-// resumeBtn.addEventListener("click",(e)=>{
-// 	e.preventDefault();
 
-//    setTimeout(()=>{
-// 	window.location.href="https://drive.google.com/file/d/1Zz_xGvoLY_bsOq0ahVqspZSfEtX-Af-F/view?usp=share_link"
-//    },500)
-
-
-	
-// })
-
-
-//github calendar
