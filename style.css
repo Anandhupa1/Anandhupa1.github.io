@@ -9,12 +9,15 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	
 }
 html {
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
 }
+
 a {
 	text-decoration: none;
 }
@@ -86,12 +89,12 @@ h2{
 }
 /* navbar start  */
 .navbar {
-	background-color: var(--grey);
+	background-color: transparent;
 	position: fixed;
 	width: 100%;
 	z-index: 999;
-	padding: 30px 5%;
-	font-family: "Ubuntu", sans-serif;
+	padding: 15px 8%;
+	font-family: 'Montserrat', sans-serif;
 	transition: all 0.3s ease;
   }
   .navbar.sticky {
@@ -122,14 +125,18 @@ h2{
   }
   .navbar .menu li a {
 	display: block;
-	color: #fff;
+	color: var(--main);
 	font-size: 18px;
 	font-weight: 500;
 	margin-left: 25px;
 	transition: color 0.3s ease;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	padding-bottom: 3px;
   }
   .navbar .menu li a:hover {
-	color: var(--main);
+	
+	border-bottom: 3px solid #6C63FF;
   }
   .navbar.sticky .menu li a:hover {
 	color: #fff;
@@ -215,7 +222,7 @@ h2{
 
  /*project section starts */
 
-.projects{
+.projectsContainer{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -246,19 +253,19 @@ h2{
 	background: #fff;
 	
   }
-  .projects .title::before,
+  .projectsContainer .title::before,
   .teams .title::before {
 	background: #fff;
   }
   
-  .projects .title::after,
+  .projectsContainer .title::after,
   .teams .title::after {
 	background: #111;
 	margin-top: 10px;
 	content: "what i have built";
   }
 
-  .projects .serv-content {
+  .projectsContainer .serv-content {
 	display: grid;
 	width: 100%;
 	grid-template-columns: repeat(3, 1fr);
@@ -266,7 +273,7 @@ h2{
 	padding: 20px;
 	box-sizing: border-box;
   }
-  .projects .serv-content .project-card {
+  .projectsContainer .serv-content .project-card {
 	height: 100%;
 	background: #fff;
 	text-align: center;
@@ -298,6 +305,22 @@ h2{
   /* project badge1 to show project status */
 
   /* project techstack badges */
+ .projectDuration{
+	background-color: #fff;
+	color: #000;
+	border: none;
+	padding-left: 9px ;
+	padding-right: 10px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+ }
+ #durationIcon{
+	font-size: 16px;
+	color: #000;
+	margin-right: 3px;
+    
+  }
  .project-tech-stack{
 	padding-top: 15px;
 	padding-bottom: 10px;
@@ -335,7 +358,7 @@ h2{
   }
   
   /* project techstack badges */
-  .projects .serv-content .project-card .box {
+  .projectsContainer .serv-content .project-card .box {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -344,21 +367,21 @@ h2{
 	transition: all 0.3s ease;
   }
 
-  .projects .serv-content .project-card:hover .box {
+  .projectsContainer .serv-content .project-card:hover .box {
 	transform: scale(1.05);
   }
   
-  .projects .serv-content .project-card i {
+  .projectsContainer .serv-content .project-card i {
 	font-size: 50px;
 	color: var(--main);
 	transition: color 0.3s ease;
   }
   
-  .projects .serv-content .project-card:hover i {
+  .projectsContainer .serv-content .project-card:hover i {
 	color: #fff;
   }
   
-  .projects .serv-content .project-card .text {
+  .projectsContainer .serv-content .project-card .text {
 	text-align: center;
 	font-size: 25px;
 	font-weight: 500;
@@ -369,7 +392,18 @@ h2{
 	object-fit: contain;
 	width: 100%;
   } */
+  #resume-link-2{
+	background-color:var(--main);
+	border-radius: 5px;
+	margin: 0px;
+	padding: 10px 20px;
+	color: #fff !important;
 
+  }
+  #resume-link-2:hover{
+	background-color: #fff;
+	color: #6C63FF !important;
+  }
   #resume-button-2{
 	background-color: transparent;
 	border: none;
@@ -380,7 +414,7 @@ h2{
 	flex-direction: row;
 	align-items: center;
 	padding: 6px 14px;
-	font-family:  "Roboto", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	border-radius: 5px;
 	border: 1px;
 	cursor: pointer;
@@ -407,6 +441,7 @@ h2{
   color: #fff;
   margin-right: 7px;
   }
+
 .sourceCodeBtn {
 	display: flex;
 	justify-content: flex-start;
@@ -420,16 +455,25 @@ h2{
 #about .about {
 	flex-direction: column;
 	text-align: center;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 100px 20px;
+	max-width: 1300px;
+	margin: 0 0;
+	margin-right: 0px;
+	padding-left: 8%;
+}
+#about{
+   
+   
 }
 #about .col-left {
-	width: 250px;
+	width: 300px;
+	
 	height: 360px;
 }
 #about .col-right {
 	width: 100%;
+	margin-right: 40px;
+	margin-left: 30px;
+	
 }
 #about .col-right h2 {
 	font-size: 1.8rem;
@@ -440,11 +484,17 @@ h2{
 #about .col-right p {
 	margin-bottom: 20px;
 }
+
 #about .col-right .cta {
-	color: black;
+	
 	margin-bottom: 50px;
 	padding: 10px 20px;
-	font-size: 2rem;
+	font-size: 20px;
+}
+
+#profilePic{
+	margin-top: 46px;
+	
 }
 /* End About Section */
 /* tools and skills section start*/
@@ -472,6 +522,9 @@ h2{
 	width: 63px;
 	height: 63px;
   }
+  #skills{
+	margin-top: 0px;
+  }
 /* tools and skills section end  */
 
 /* gitstats start */
@@ -484,20 +537,34 @@ h2{
 	padding: 0px;
 
 }
-
+#githubCalender{
+	background-color: #000;
+	margin-top: 0px;
+	
+	padding-top:20px ;
+	padding-bottom:30px ;
+	padding-left: 8%;
+	padding-right: 8%;
+}
 
 #gitStatus{
-	
+	background-color: #000;
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	width: 90%;
+	width: 100%;
 	height: auto;
 	margin: auto;
+	padding-bottom: 30px;
+	
+
 }
 #gitStatus div{
-	width: 40%;
-	margin: 3%;
+	width: 30%;
+	
+	
 }
 /* contact Section */
 .contact  .contact-content {
@@ -595,7 +662,7 @@ h2{
 	outline: none;
 	padding: 0 15px;
 	font-size: 17px;
-	font-family: "Poppins", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	transition: all 0.3s ease;
   }
   
@@ -643,7 +710,7 @@ h2{
 
 /* Footer */
 #footer {
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-color: #000;
 }
 #footer .footer {
 	min-height: 200px;
@@ -755,7 +822,10 @@ h2{
 	#projects .all-projects .project-img {
 		height: 100%;
 	}
-	
+	#projects{
+		padding-bottom: 50px;
+		
+	}
 	
 	/* End Project */
 
@@ -837,7 +907,7 @@ h2{
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
-	.projects .serv-content {
+	.projectsContainer .serv-content {
 		padding-left: 100px;
 		padding-right: 100px;
 	}
@@ -847,18 +917,18 @@ h2{
 /* responsive media queries start  */
 
 @media (max-width: 947px) {
-.projects .serv-content {
+.projectsContainer .serv-content {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .projects .serv-content .project-card {
+  .projectsContainer .serv-content .project-card {
     /* width: calc(50% - 10px); */
     margin-bottom: 20px;
   }
 }
 @media (max-width: 690px) {
 	
-.projects .serv-content {
+	.projectsContainer .serv-content {
     grid-template-columns: repeat(1, 1fr);
   }
   #contact-content{
