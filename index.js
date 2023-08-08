@@ -3,23 +3,28 @@ let projectContainer = document.getElementById("projectContainer");
 
 let data = [
     {
-        title : "Codemate",
-        tag1  : "Group Project",
-        description : "An appointment booking app for students to efficiently schedule and manage sessions with instructors.",
+        title : "E-Buy",
+        tag1  : "Individual Project",
+        description : "A dynamic e-commerce web application delivering a seamless shopping experience.",
         image : "Role Based Access control.png",
-        deployedLink : "https://tutor-track.vercel.app/",
-        githubLink : "https://github.com/Anandhupa1/TutorTrack",
-        techStack : [{name : "HTML",image:"html.svg"},{name : "CSS",image:"css.svg"},{name:"Javascript",image:"javascript.svg"},
-                    {name:"Nodejs",image:"node.svg"},
+        deployedLink : "https://github.com/Anandhupa1/EBuy-e-commerce-Node-Backend-Project-1",
+        githubLink : "https://github.com/Anandhupa1/EBuy-e-commerce-Node-Backend-Project-1",
+        techStack : [
+          {name : "React.js",image:"react.svg"},
+          {name : "Redux",image:"redux.png"},
+          {name:"Node.js",image:"node.svg"},
+          {name:"Express.js",image:"express.png"},
+          {name:"MongoDB",image:"mongodb.svg"},
+                     
                     ]
 
     },
     {
         title : "Codemate",
-        tag1  : "Individual Project",
+        tag1  : "Group Project",
         tag1Color:"#000",
         description : "An appointment booking app for students to efficiently schedule and manage sessions with instructors.",
-        image : "Role Based Access control.png",
+        image : "codemate.png",
         deployedLink : "https://tutor-track.vercel.app",
         githubLink : "https://github.com/Anandhupa1/TutorTrack",
         techStack : [{name : "HTML",image:"html.svg"},{name : "CSS",image:"css.svg"},{name:"Javascript",image:"javascript.svg"},
