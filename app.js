@@ -8,10 +8,10 @@ document.addEventListener('scroll', () => {
 	var scroll_position = window.scrollY;
 	
    if (scroll_position > 3700) {
-		header.style.backgroundColor = '#000';
+		header.style.backgroundColor = '#fff';
 	} 
   else if (scroll_position > 3100) {
-		header.style.backgroundColor = '#fff';
+		header.style.backgroundColor = '#000';
 	} 
   else if (scroll_position > 2600) {
 		header.style.backgroundColor = '#000';

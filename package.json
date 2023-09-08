@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/Anandhupa1/Anandhupa1#readme",
   "dependencies": {
-    "github-calendar": "^1.1.12"
+    "github-calendar": "^2.3.2"
   }
 }

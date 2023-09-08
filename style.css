@@ -539,11 +539,11 @@ h2{
 
 }
 #githubCalender{
-	background-color: #000;
+	background-color: #fff;
 	margin-top: 0px;
 	
 	padding-top:20px ;
-	padding-bottom:30px ;
+	padding-bottom:70px ;
 	padding-left: 8%;
 	padding-right: 8%;
 }
@@ -551,14 +551,17 @@ h2{
 #gitStatus{
 	background-color: #000;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
 	width: 100%;
 	height: auto;
 	margin: auto;
-	padding-bottom: 30px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-bottom: 100px;
 	
 
 }
