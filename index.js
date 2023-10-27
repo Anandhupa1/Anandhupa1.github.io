@@ -3,11 +3,31 @@ let projectContainer = document.getElementById("projectContainer");
 
 let data = [
     {
+        title : "Foodie Bot",
+        tag1  : "Individual Project",
+        description : "A dynamic chatbot serving tailored food recommendations and similar recipes.",
+        image : "foodie.png",
+        deployedLink : "https://foodchatbot-anandhupa1.vercel.app",
+        githubLink : "https://github.com/Anandhupa1/GENAI-MAIN-PROJECT",
+        techStack : [
+          {name : "Next.js",image:"nextjs.png"},
+          {name:"Python",image:"python.png"},
+          {name:"Flask",image:"flask.png"},
+          {name:"Qdrant",image:"qdrant.png"},
+          {name:"OpenAI API",image:"openai.png"},
+          {name:"Node.js",image:"node.svg"},
+          {name:"Socket.io",image:"socket.png"},
+          {name:"MongoDB",image:"mongodb.svg"},
+                     
+                    ]
+
+    },
+    {
         title : "E-Buy",
         tag1  : "Individual Project",
         description : "A dynamic e-commerce web application delivering a seamless shopping experience.",
-        image : "Role Based Access control.png",
-        deployedLink : "https://silver-liger-211a68.netlify.app/",
+        image : "ebuy.png",
+        deployedLink : "https://e-j1ht73pgy-anandhupa1.vercel.app",
         githubLink : "https://github.com/Anandhupa1/EBuy-e-commerce-Node-Backend-Project-1",
         techStack : [
           {name : "React.js",image:"react.svg"},
