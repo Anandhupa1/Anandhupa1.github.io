@@ -22,24 +22,7 @@ let data = [
                     ]
 
     },
-    {
-        title : "E-Buy",
-        tag1  : "Individual Project",
-        description : "A dynamic e-commerce web application delivering a seamless shopping experience.",
-        image : "ebuy.png",
-        deployedLink : "https://e-j1ht73pgy-anandhupa1.vercel.app",
-        githubLink : "https://github.com/Anandhupa1/EBuy-e-commerce-Node-Backend-Project-1",
-        techStack : [
-          {name : "React.js",image:"react.svg"},
-          {name : "Redux",image:"redux.png"},
-           
-          {name:"Node.js",image:"node.svg"},
-          {name:"Express.js",image:"express.png"},
-          {name:"MongoDB",image:"mongodb.svg"},
-                     
-                    ]
 
-    },
     {
         title : "Codemate",
         tag1  : "Group Project",
@@ -56,6 +39,24 @@ let data = [
 
     },
     {
+      title : "RBAC",
+      tag1  : "Individual Project",
+      tag1Color:"#48485a",
+      description : "A web application that demonstrates role-based access control.",
+      image : "Role Based Access control.jpg",
+      days : 3,
+      deployedLink : "https://rbac-4f09.onrender.com/",
+      githubLink : "https://github.com/Anandhupa1/Role-Based-Access-Controll",
+      techStack : [
+                  {name:"Nodejs",image:"node.svg"},
+                  {name:"Express.js",image:"express.png"},
+                  {name:"EJS",image:"ejs.png"},
+                
+                 
+                  ]
+
+  },
+    {
         title : "Horizon Health",
         tag1  : "Group Project",
         tag1Color:"#66aaf1",
@@ -65,7 +66,7 @@ let data = [
         githubLink : "https://github.com/Anandhupa1/Horizon-Health",
         techStack : [
           {name : "React.js",image:"react.svg"},
-         
+          
           {name:"Node",image:"node.svg"},
           {name:"Express",image:"express.png"},
           {name:"Chakra-UI",image:"chakraui.png"},
@@ -89,23 +90,24 @@ let data = [
 
     },
     {
-        title : "RBAC",
-        tag1  : "Individual Project",
-        tag1Color:"#48485a",
-        description : "A web application that demonstrates role-based access control.",
-        image : "Role Based Access control.jpg",
-        days : 3,
-        deployedLink : "https://rbac-4f09.onrender.com/",
-        githubLink : "https://github.com/Anandhupa1/Role-Based-Access-Controll",
-        techStack : [
-                    {name:"Nodejs",image:"node.svg"},
-                    {name:"Express.js",image:"express.png"},
-                    {name:"EJS",image:"ejs.png"},
-                  
+      title : "E-Buy",
+      tag1  : "Individual Project",
+      description : "A dynamic e-commerce web application delivering a seamless shopping experience.",
+      image : "ebuy.png",
+      deployedLink : "https://e-j1ht73pgy-anandhupa1.vercel.app",
+      githubLink : "https://github.com/Anandhupa1/EBuy-e-commerce-Node-Backend-Project-1",
+      techStack : [
+        {name : "React.js",image:"react.svg"},
+        {name : "Redux",image:"redux.png"},
+         
+        {name:"Node.js",image:"node.svg"},
+        {name:"Express.js",image:"express.png"},
+        {name:"MongoDB",image:"mongodb.svg"},
                    
-                    ]
+                  ]
 
-    },
+  },
+
 
 
 ]
