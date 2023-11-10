@@ -3,6 +3,25 @@ let projectContainer = document.getElementById("projectContainer");
 
 let data = [
     {
+        title : "PDF Manager",
+        tag1  : "Individual Project",
+        description : "A comprehensive web application for secure PDF uploads, edits,reorganization and effortless document sharing.",
+        image : "pdfmanager.png",
+        deployedLink : "https://pdfeditor-anandhupa1.vercel.app",
+        githubLink : "https://github.com/Anandhupa1/vidyalai-full-stack-task",
+        techStack : [
+          {name : "Next.js",image:"nextjs.png"},
+          {name : "tailwind",image:"tailwind.png"},
+          {name:"Node.js",image:"node.svg"},
+          {name:"Express.js",image:"express.png"},
+          {name:"MongoDB",image:"mongodb.svg"},
+          {name : "AWS S3",image:"s3.png"},
+          {name:"AWS",image:"aws.svg"},
+                     
+                    ]
+
+    },
+    {
         title : "Foodie Bot",
         tag1  : "Individual Project",
         description : "A dynamic chatbot serving tailored food recommendations and similar recipes.",
@@ -57,6 +76,25 @@ let data = [
 
   },
     {
+        title : "Code-Craft",
+        tag1  : "Individual Project",
+        tag1Color:"#9e7aeb",
+        description : "A web application designed for efficient code translation, debugging, and quality checks with the power of Generative AI ",
+        image : "codeConverter.png",
+        deployedLink : "https://codecraft-jpke0gjgf-anandhupa1.vercel.app",
+        githubLink : "https://github.com/Anandhupa1/code-converter",
+        techStack : [
+          {name:"OpenAI API",image:"openai.png"},
+          {name : "React.js",image:"react.svg"},
+          {name:"Node",image:"node.svg"},
+          {name:"Express",image:"express.png"},
+          {name:"Chakra-UI",image:"chakraui.png"},
+
+                     
+                    ]
+
+    },
+    {
         title : "Horizon Health",
         tag1  : "Group Project",
         tag1Color:"#66aaf1",
@@ -92,7 +130,7 @@ let data = [
     {
       title : "E-Buy",
       tag1  : "Individual Project",
-      description : "A dynamic e-commerce web application delivering a seamless shopping experience.",
+      description : "A dynamic e-commerce web application showcasing various products ",
       image : "ebuy.png",
       deployedLink : "https://e-j1ht73pgy-anandhupa1.vercel.app",
       githubLink : "https://github.com/Anandhupa1/EBuy-e-commerce-Node-Backend-Project-1",
